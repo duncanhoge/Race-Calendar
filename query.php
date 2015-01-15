@@ -1,9 +1,11 @@
 <?php
-include('inc/config.php');
+
 include('inc/database.php');
 
+//NOT SURE WHAT THESE ARE GOOD FOR:
+	//require(ROOT_PATH . "inc/database.php");
+	//require(ROOT_PATH . "inc/config.php");
 
-require(ROOT_PATH . "inc/database.php");
 
 /**QUERY THE SERVER**/
 
@@ -32,8 +34,8 @@ So, we will use FETCH_ASSOC so it doesn't spit out double results.
 
 echo "<pre>";
 //TEST LINE:
-var_dump($results->fetchAll(PDO::FETCH_ASSOC));
-//$listing = $results->fetchAll(PDO::FETCH_ASSOC));
+//var_dump($results->fetchAll(PDO::FETCH_ASSOC));
+$listing = $results->fetchAll(PDO::FETCH_ASSOC));
 echo "</pre>";
 
 ?>
